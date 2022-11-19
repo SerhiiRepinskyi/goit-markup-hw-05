@@ -61,7 +61,7 @@
       <section class="hero">
         <div class="container">
           <h1 class="hero-title">Ефективні рішення для<br />вашого бізнесу</h1>
-          <button type="button" class="button btn-primary">Замовити послугу</button>
+          <button class="button btn-primary" type="button" data-modal-open>Замовити послугу</button>
         </div>
       </section>
 
@@ -128,12 +128,15 @@
           <ul class="job-list list">
             <li class="item">
               <img src="./images/box1.jpg" alt="Десктопні додатки" width="370" />
+              <h3 class="title">Десктопні додатки</h3>
             </li>
             <li class="item">
               <img src="./images/box2.jpg" alt="Мобільні додатки" width="370" />
+              <h3 class="title">Мобільні додатки</h3>
             </li>
             <li class="item">
               <img src="./images/box3.jpg" alt="Дизайнерські рішення" width="370" />
+              <h3 class="title">Дизайнерські рішення</h3>
             </li>
           </ul>
         </div>
@@ -147,7 +150,7 @@
           <ul class="team-list list">
             <li class="item">
               <img src="./images/team-card-1.jpg" alt="Член команди" width="270" />
-              <div class="tumba">
+              <div class="team-wrap">
                 <h3 class="title">Ігор Дем'яненко</h3>
                 <p class="text">Product Designer</p>
                 <ul class="team-soc-list list">
@@ -205,7 +208,7 @@
 
             <li class="item">
               <img src="./images/team-card-2.jpg" alt="Член команди" width="270" />
-              <div class="tumba">
+              <div class="team-wrap">
                 <h3 class="title">Ольга Рєпіна</h3>
                 <p class="text">Frontend Developer</p>
                 <ul class="team-soc-list list">
@@ -263,7 +266,7 @@
 
             <li class="item">
               <img src="./images/team-card-3.jpg" alt="Член команди" width="270" />
-              <div class="tumba">
+              <div class="team-wrap">
                 <h3 class="title">Микола Тарасов</h3>
                 <p class="text">Marketing</p>
                 <ul class="team-soc-list list">
@@ -321,7 +324,7 @@
 
             <li class="item">
               <img src="./images/team-card-4.jpg" alt="Член команди" width="270" />
-              <div class="tumba">
+              <div class="team-wrap">
                 <h3 class="title">Михайло Єрмаков</h3>
                 <p class="text">UI Designer</p>
                 <ul class="team-soc-list list">
@@ -440,7 +443,6 @@
     <!--Футер-->
     <footer class="footer">
       <div class="container">
-
         <div class="footer-logo-wrap">
           <a class="logo" href="./index.html">Web<span class="footer-logo">Studio</span></a>
           <address>
@@ -497,8 +499,19 @@
             </li>
           </ul>
         </div>
-        
       </div>
     </footer>
+
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="modal-close" type="button" data-modal-close>
+          <svg class="modal-close-icon" width="18" height="18">
+            <use href="./images/icons.svg#icon-close-black-18dp"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
   </body>
 </html>
